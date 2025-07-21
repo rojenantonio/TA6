@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | PC Company</title>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+  <div class="header-container">
+  <a href="index.html" class="logo">
+    <img src="images/pc logo.png" alt="Logo" width="60">
+  </a>
+
+  <nav id="navbar">
+  <div class="nav-left">
+    <a href="services.html">PRODUCT</a>
+    <a href="about.html">ABOUT</a>
+  </div>
+</nav>
+  </header>
+
+  <section class="hero">
+    <img src="images/cover.jpg" alt="cover" width="100%">
+  </section>
+
+  <section class="smallphotos">
+    <div class="column">
+        <div class="image-container">
+            <img src="images/rtx5060.jpg" alt="Small Cover">
+            <div class="textbelow">
+                <h1>Power Up with RTX 5060!!</h1>
+                <p>Blazing-fast graphics, AI magic, and ultra-smooth gameplay — that’s the power of the GeForce RTX 5060! Play, create, and conquer.</p><br>
+                <a href="services.html" class="button1">Explore</a>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="image-container">
+            <img src="images/rx8600 .jpg" alt="Small Cover">
+            <div class="textbelow">
+                <h2>Unleash the Red Power!</h2>
+                <p>Blazing performance, sharp visuals, and next-level efficiency — that’s the magic of the AMD Radeon RX 8600! Game, create, and dominate.</p><br>
+                <a href="services.html" class="button1">Explore</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+        <div class="footer-content">
+        <div class="social-links">
+    <img src="images/facebook-icon.png" alt="Facebook" width="30px">
+  </a>
+    <img src="images/instagram-icon.png" alt="Instagram" width="30px">
+  </a>
+    <img src="images/tiktok-icon.png" alt="TikTok" width="30px">
+  </a>
+</div>
+
+<div class="footer">
+        <p>© 2025 PC Company. All rights reserved.</p>
+        </div>
+        </div>
+  </footer>
+
+  <script>
+  const toggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('navbar');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+
+</script>
+
+</body>
+</html>

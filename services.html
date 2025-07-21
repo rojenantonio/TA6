@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu | PC Company</title>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+  <div class="header-container">
+  <a href="index.html" class="logo">
+    <img src="images/pc logo.png" alt="Logo" width="60">
+  </a>
+
+
+  <nav id="navbar">
+  <div class="nav-left">
+    <a href="services.html" class="currentpage">PRODUCT</a>
+    <a href="about.html">ABOUT</a>
+  </div>
+</nav>
+  
+    <style>
+    a.currentpage {
+        text-decoration: underline;
+        text-decoration-thickness: 7px;
+        text-underline-offset: 40px;
+        text-decoration-color: #70007a;
+    }
+
+    @media screen and (max-width: 768px) {
+    a.currentpage {
+      text-underline-offset: 3px !important;
+      text-decoration-thickness: 2px !important;
+    }
+  }
+  </style>
+  </header>
+  <main class="menu-container">
+        <h1 class="menu-heading">OUR PRODUCTS</h1>
+    <div class="product-grid">
+            <div class="product-item clickable" data-name="GeForce RTX5060" data-image="images/rtx5060.png">
+                <div class="product-image-container">
+                    <img src="images/rtx5060.png" alt="rtx5060">
+                </div>
+                <p class="product-name">GeForce RTX5060</p>
+            </div>
+
+            <div class="product-item clickable" data-name="AMD Radeon RX8600" data-image="images/rx8600xt.png">
+                <div class="product-image-container">
+                    <img src="images/rx8600xt.png" alt="rx8600">
+                </div>
+                <p class="product-name">AMD Radeon RX8600</p>
+            </div>
+
+            <div class="product-item clickable" data-name="AORUS RGB Memory 16GB" data-image="images/aorus 16gb ram.png">
+                <div class="product-image-container">
+                    <img src="images/aorus 16gb ram.png" alt="AORUS RGB Memory 16GB">
+                </div>
+                <p class="product-name">AORUS RGB Memory 16GB</p>
+            </div>
+
+            <div class="product-item clickable" data-name="TUF Gaming TF120 ARGB Fan" data-image="images/gaming fan.png">
+                <div class="product-image-container">
+                    <img src="images/gaming fan.png" alt="TUF Gaming TF120 ARGB Fan">
+                </div>
+                <p class="product-name">TUF Gaming TF120 ARGB Fan</p>
+            </div>
+
+            <div class="product-item clickable" data-name="G915 X Low-Profile Wired Gaming Keyboard | Logitech G" data-image="images/gaming keyboard.png">
+                <div class="product-image-container">
+                    <img src="images/gaming keyboard.png" alt="G915 X Low-Profile Wired Gaming Keyboard | Logitech G">
+                </div>
+                <p class="product-name">G915 X Low-Profile Wired Gaming Keyboard | Logitech G</p>
+            </div>
+
+            <div class="product-item clickable" data-name="Legend Chroma M990-RGB Gaming Mouse" data-image="images/gaming mouse.png">
+                <div class="product-image-container">
+                    <img src="images/gaming mouse.png" alt="Legend Chroma M990-RGB Gaming Mouse">
+                </div>
+                <p class="product-name">Legend Chroma M990-RGB Gaming Mouse</p>
+            </div>
+
+            <div class="product-item clickable" data-name="Unison | LG 27” UltraGear™ OLED Gaming Monitor QHD" data-image="images/gaming monitor.png">
+                <div class="product-image-container">
+                    <img src="images/gaming monitor.png" alt="Unison | LG 27” UltraGear™ OLED Gaming Monitor QHD">
+                </div>
+                <p class="product-name">Unison | LG 27” UltraGear™ OLED Gaming Monitor QHD</p>
+            </div>
+
+            <div class="product-item clickable" data-name="Logitech G733 Lightspeed Wireless Gaming Headset" data-image="images/gaming headset.png">
+                <div class="product-image-container">
+                    <img src="images/gaming headset.png" alt="Logitech G733 Lightspeed Wireless Gaming Headset">
+                </div>
+                <p class="product-name">Logitech G733 Lightspeed Wireless Gaming Headset</p>
+            </div>
+        </div>
+    </main>
+
+    <div id="yogurtModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="modal-body">
+        <img id="modalImage" class="modal-main-image" src="" alt="product Image">
+        <div class="modal-text">
+          <h2 id="modalTitle"></h2>
+          <p id="modalDescription">A delightful yogurt product.</p>
+          <p class="modal-price" id="modalPrice"></p> <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+        <div class="footer-content">
+        <div class="social-links">
+    <img src="images/facebook-icon.png" alt="Facebook" width="30px">
+  </a>
+    <img src="images/instagram-icon.png" alt="Instagram" width="30px">
+  </a>
+    <img src="images/tiktok-icon.png" alt="TikTok" width="30px">
+  </a>
+</div>
+
+<div class="footer">
+        <p>© 2025 PC Company. All rights reserved.</p>
+        </div>
+        </div>
+  </footer>
+  <script src="script.js"></script> 
+
+  <script>
+  const toggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('navbar');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+
+</script>
+
+</body>
+</html>
